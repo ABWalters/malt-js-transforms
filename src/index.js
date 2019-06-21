@@ -1,8 +1,10 @@
 import { initServer } from 'malt-js';
-import discoveryHandler from './discovery';
 import serverless from 'serverless-http';
 
 import './crtsh/toCrtShID';
+import './crtsh/toHash';
+import './crtsh/toIssuer';
+import discoveryHandler from './discovery';
 
 const meta = {
   author: 'ABWalters'
@@ -22,3 +24,4 @@ try {
 }
 
 export const handler = serverless(server.koaApp);
+server.koaApp.listen(3000);

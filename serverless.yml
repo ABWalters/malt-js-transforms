@@ -4,6 +4,8 @@ frameworkVersion: ">=1.1.0 <2.0.0"
 custom:
   babelPresets:
     - latest
+  webpack:
+    excludeFiles: src/*.mtz
 
 plugins:
   - serverless-offline
@@ -16,6 +18,11 @@ provider:
   memorySize: 512
   timeout: 30
   profile: serverless
+
+package:
+  include:
+    - static/**
+
 
 functions:
   main:
