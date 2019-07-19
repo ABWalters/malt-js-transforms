@@ -5,7 +5,6 @@
   "main": "index.js",
   "dependencies": {
     "axios": "^0.19.0",
-    "malt-js": "^0.0.1",
     "serverless-http": "^2.0.2",
     "xmlbuilder": "^13.0.2"
   },
@@ -34,7 +33,8 @@
   },
   "scripts": {
     "start": "sls offline --httpsProtocol=dev-certs",
-    "start-nossl": "sls offline"
+    "start-nossl": "sls offline",
+    "dev": "nodemon --exec babel-node src/index.js"
   },
   "repository": {
     "type": "git",
