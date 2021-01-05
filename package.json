@@ -4,7 +4,7 @@
   "description": "Maltego Transforms for Crt.Sh written in Javascript (Node).",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "serverless-http": "^2.0.2",
     "xmlbuilder": "^13.0.2"
   },
